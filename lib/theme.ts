@@ -19,6 +19,16 @@ export const THEME = {
   /** Шрифт для монограммы и надписей на картах (системный, рисуется на canvas) */
   serif: `Didot, "Bodoni MT", Georgia, "Times New Roman", serif`,
 
+  /** Знак в центре фишки; font: "serif" — шрифт выше, "brand" — шрифт названия с сайта */
+  chipMark: { text: "ПЛ", font: "serif" as "serif" | "brand" },
+  /** Логотип, напечатанный на сукне в центре стола */
+  tableLogo: {
+    monogram: "ПЛ", // знак в круге над названием; пусто — без круга
+    title: "POKER LOUNGE",
+    sub: "ПОКЕРНЫЙ КЛУБ · КАЛЬЯН-БАР",
+    font: "serif" as "serif" | "brand",
+  },
+
   /** Фон сцены: градиент от центра к краям */
   bg: { inner: "#1a2029", outer: "#07080b", focus: [0.62, 0.62] as [number, number] },
 
